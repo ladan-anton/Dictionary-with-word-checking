@@ -1,0 +1,25 @@
+﻿<Window x:Class="RussianToChinese.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="RussianToChinese" Height="250" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="russianWordTextBlock" Grid.Row="0" Margin="5"/>
+        <Button Content="Случайное слово" Grid.Row="6" Click="RandomWordButton_Click" Margin="5"/>
+        <TextBlock Grid.Row="1" Text="Русское слово:" Margin="5"/>
+        <TextBox x:Name="russianWordTextBox" Grid.Row="1" Margin="100,5,5,5"/>
+        <TextBlock Grid.Row="2" Text="Иероглиф:" Margin="5"/>
+        <TextBox x:Name="chineseCharTextBox" Grid.Row="2" Margin="100,5,5,5"/>
+        <Button Grid.Row="3" Content="Проверить" Click="CheckButton_Click" Margin="5"/>
+        <Button Grid.Row="4" Content="Добавить слово" Click="AddWordButton_Click" Margin="5"/>
+        
+        
+    </Grid>
+</Window>
